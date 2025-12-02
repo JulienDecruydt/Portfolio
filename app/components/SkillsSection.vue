@@ -71,6 +71,16 @@ const skills = [
     name: 'Python',
     icon: 'simple-icons:python',
     description: 'Backend development and automation scripts'
+  },
+  {
+    name: 'TypeScript',
+    icon: 'simple-icons:typescript',
+    description: 'Strong typing for JavaScript'
+  },
+  {
+    name: 'React',
+    icon: 'simple-icons:react',
+    description: 'Frontend framework for building web applications'
   }
 ]
 </script>

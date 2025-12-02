@@ -24,13 +24,22 @@
             <!-- Header -->
             <div class="project-card__header">
               <div class="project-card__company">{{ project.company }}</div>
-              <div class="project-card__year">{{ project.year }}</div>
+              <div class="project-card__year">
+                {{ project.year }}
+              </div>
             </div>
             
             <!-- Main Info -->
             <div class="project-card__main">
               <h3 class="project-card__title">{{ project.name }}</h3>                            
               <p class="project-card__desc">{{ project.description }}</p>
+            </div>
+
+            <div class="project-card__link">
+              <a v-if="project.link" :href="project.link" target="_blank" class="hero__cta">
+                  <span>View project</span>
+                  <Icon name="lucide:external-link" />
+                </a>
             </div>
             
             <!-- Footer -->
@@ -47,50 +56,84 @@
 </template>
 
 <script setup lang="ts">
-const projects = [
+interface Project {
+  name: string;
+  company: string;
+  description: string;
+  year: string;
+  tags: string[];
+  link?: string;
+}
+
+const projects: Project[] = [
   {
     name: 'Suzuki France',
     company: 'Suzuki',
-    description: 'Official website for Suzuki France with modern design, vehicle catalog, and dealer locator functionality.',
-    year: '2022',
-    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS']
+    description: 'Official website for Suzuki France with clean design, full car catalog, dealer search, and easy-to-use interface.',
+    year: '2024',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
+    link: 'https://www.suzuki.fr'
   },
   {
     name: 'Suzuki Concession',
     company: 'Suzuki',
-    description: 'Website for Suzuki dealers of Suzuki cars.',
-    year: '2022',
-    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS']
+    description: 'Website for Suzuki dealers with simple design, car listings, and easy contact options for customers.',
+    year: '2024',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
+    link: 'https://concession.suzuki.fr/'
   },
   {
     name: 'Suzuki Care',
     company: 'Suzuki',
-    description: 'Digital platform for dealerships to manage service estimates, repairs, and maintenance scheduling efficiently.',
+    description: 'Platform for dealers to manage car repairs, service schedules, and estimates easily and quickly.',
     year: '2023',
-    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS']
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
+  },
+  {
+    name: 'Suzuki Discover',
+    company: 'Suzuki',
+    description: 'Private website for commercial teams to showcase cars with beautiful visuals and support sales presentations.',
+    year: '2023',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
+  },
+  {
+    name: 'Suzuki France Dashboard',
+    company: 'Suzuki',
+    description: 'Admin dashboard to manage Suzuki France and Suzuki Concession websites, with full content control and easy updates.',
+    year: '2024',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
+  },
+  {
+    name: 'Suzuki Concession Dashboard',
+    company: 'Suzuki',
+    description: 'Dashboard for dealers to manage their own Suzuki Concession website, update content, and track performance.',
+    year: '2024',
+    tags: ['Vue.js', 'Nuxt.js', 'Tailwind CSS'],
   },
   {
     name: 'Novaseo',
     company: 'Novaseo',
-    description: 'SaaS platform providing comprehensive SEO tools and analytics for their clients.',
+    description: 'SaaS platform with easy SEO tools, clear analytics, and tips to help clients grow online.',
     year: '2018',
-    tags: ['Vue.js', 'Python', 'Django', 'Tailwind CSS']
+    tags: ['Vue.js', 'Python', 'Django', 'Tailwind CSS'],
   },
   {
     name: 'Novavocat',
     company: 'Novaseo',
-    description: 'Legal consultation platform connecting clients with qualified lawyers through an intuitive Q&A system.',
+    description: 'Legal platform connecting clients with lawyers using a simple Q&A system and easy booking.',
     year: '2019',
-    tags: ['Vue.js', 'Nuxt.js', 'Django', 'Tailwind CSS']
+    tags: ['Vue.js', 'Nuxt.js', 'Django', 'Tailwind CSS'],
   },
   {
     name: 'Quai38',
     company: 'Quai38',
-    description: 'Restaurant website featuring menu showcase, reservation system, and location information.',
+    description: 'Restaurant website showing the menu, reservation system, and location info in a clear layout.',
     year: '2018',
-    tags: ['Vue.js', 'Nuxt.js', 'Sass']
+    tags: ['Vue.js', 'Nuxt.js', 'Sass'],
+    link: 'https://quai38-lille.fr/'
   }
-]
+];
+
 </script>
 
 <style lang="scss" scoped>
@@ -108,6 +151,22 @@ const projects = [
 
 .projects__header {
   margin-bottom: 4rem;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
+  margin: 0 0 15px 0;
 }
 
 .projects__label {
