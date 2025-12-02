@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Suzuki France",
+    "company": "Suzuki",
+    "description": "Official website for Suzuki France with modern design, vehicle catalog, and dealer locator functionality.",
+    "year": "2022",
+    "link": "https://www.suzuki.fr/",
+    "tags": ["Vue.js", "Nuxt.js", "Tailwind CSS"]
+  },
+  {
+    "name": "Suzuki Concession",
+    "company": "Suzuki",
+    "description": "Website for Suzuki dealers of Suzuki cars.",
+    "year": "2022",
+    "link": "https://www.suzuki.fr/concession/",
+    "tags": ["Vue.js", "Nuxt.js", "Tailwind CSS"]
+  },
+  {
+    "name": "Suzuki Care",
+    "company": "Suzuki",
+    "description": "Digital platform for dealerships to manage service estimates, repairs, and maintenance scheduling efficiently.",
+    "year": "2023",
+    "link": "#",
+    "tags": ["Vue.js", "Nuxt.js", "Tailwind CSS"]
+  },
+  {
+    "name": "Novaseo",
+    "company": "Novaseo",
+    "description": "SaaS platform providing comprehensive SEO tools and analytics for their clients.",
+    "year": "2018",
+    "link": "#",
+    "tags": ["Vue.js", "Python", "Django", "Tailwind CSS"]
+  },
+  {
+    "name": "Novavocat",
+    "company": "Novaseo",
+    "description": "Legal consultation platform connecting clients with qualified lawyers through an intuitive Q&A system.",
+    "year": "2019",
+    "link": "#",
+    "tags": ["Vue.js", "Nuxt.js", "Django", "Tailwind CSS"]
+  },
+  {
+    "name": "Quai38",
+    "company": "Quai38",
+    "description": "Restaurant website featuring menu showcase, reservation system, and location information.",
+    "year": "2018",
+    "link": "#",
+    "tags": ["Vue.js", "Nuxt.js", "Sass"]
+  }
+]
+
