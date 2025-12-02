@@ -21,7 +21,7 @@
       <div class="hero__headline">
         <span class="hero__line">Your next project needs a</span>
         <span class="hero__line">
-          <span class="text-gradient">Vue.js</span> freelancer
+          <span class="text-gradient">Vue.js</span> developer
         </span>
       </div>
 
