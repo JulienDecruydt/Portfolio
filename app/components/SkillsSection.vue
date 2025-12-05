@@ -48,9 +48,24 @@ const skills = [
     description: 'Modern ES6+ JavaScript and TypeScript'
   },
   {
+    name: 'TypeScript',
+    icon: 'simple-icons:typescript',
+    description: 'Strong typing for JavaScript'
+  },
+  {
+    name: 'Pinia',
+    icon: 'simple-icons:pinia',
+    description: 'Typescript state management for Vue.js'
+  },
+  {
     name: 'Tailwind CSS',
     icon: 'simple-icons:tailwindcss',
     description: 'Utility-first CSS framework for rapid UI development'
+  },
+  {
+    name: 'Sass/SCSS',
+    icon: 'simple-icons:sass',
+    description: 'Advanced CSS preprocessing and architecture'
   },
   {
     name: 'Git',
@@ -63,25 +78,25 @@ const skills = [
     description: 'Cross-platform mobile app development'
   },
   {
-    name: 'Sass/SCSS',
-    icon: 'simple-icons:sass',
-    description: 'Advanced CSS preprocessing and architecture'
-  },
-  {
     name: 'Python',
     icon: 'simple-icons:python',
     description: 'Backend development and automation scripts'
   },
   {
-    name: 'TypeScript',
-    icon: 'simple-icons:typescript',
-    description: 'Strong typing for JavaScript'
-  },
-  {
     name: 'React',
     icon: 'simple-icons:react',
     description: 'Frontend framework for building web applications'
-  }
+  },
+  {
+    name: 'Prisma',
+    icon: 'simple-icons:prisma',
+    description: 'ORM for database management'
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'simple-icons:postgresql',
+    description: 'Relational database management system'
+  },
 ]
 </script>
 

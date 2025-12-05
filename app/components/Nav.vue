@@ -106,6 +106,7 @@ onMounted(() => {
   padding: var(--space-4) 0;
   transition: all var(--transition-base);
 
+
   &--scrolled {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px) saturate(180%);
@@ -245,6 +246,7 @@ onMounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 
     @media (min-width: 768px) {
       display: none;
